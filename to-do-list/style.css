@@ -1,0 +1,322 @@
+/* default settings default settings default settings default settings default settings */
+/* default settings default settings default settings default settings default settings */
+/* default settings default settings default settings default settings default settings */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    line-height: 1;
+    font-family: Poppins, sans-serif;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+/* root root root root root root root root root root root root root root root root root */
+/* root root root root root root root root root root root root root root root root root */
+/* root root root root root root root root root root root root root root root root root */
+
+:root{
+    --allBlack: #000;
+    --darkBlack: #222;
+    --lightBlack: #888;
+    --allWhite: #fff;
+    --darkWhite: #ccc;
+    --lightWhite: #eee;
+    --lightBlue: #157cef;
+    --wrongRed: #c12d43;
+    --greenDollar: #16a25e;
+}
+
+body{
+    background: var(--darkBlack);
+    color: var(--allWhite);
+}
+
+/* ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn */
+/* ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn */
+/* ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn ctn */
+
+.ctn{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+}
+
+/* to-do ctn to-do ctn to-do ctn to-do ctn to-do ctn to-do ctn to-do ctn */
+/* to-do ctn to-do ctn to-do ctn to-do ctn to-do ctn to-do ctn to-do ctn */
+/* to-do ctn to-do ctn to-do ctn to-do ctn to-do ctn to-do ctn to-do ctn */
+
+.to-do-ctn{
+    top: 10%;
+    position: fixed;
+    background: var(--darkBlack);
+    width: 500px;
+    padding: 48px;
+    box-sizing: border-box;
+    max-height: 75%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.to-do-ctn::-webkit-scrollbar{
+    background: inherit;
+}
+
+.to-do-ctn::-webkit-scrollbar-thumb{
+    background: var(--lightBlack);
+    border: 6px solid var(--darkBlack);
+    border-radius: 15px;
+}
+
+.to-do-ctn::-webkit-scrollbar-thumb:hover{
+    background: #666;
+}
+
+/* date ctn date ctn date ctn date ctn date ctn date ctn date ctn date ctn */
+/* date ctn date ctn date ctn date ctn date ctn date ctn date ctn date ctn */
+/* date ctn date ctn date ctn date ctn date ctn date ctn date ctn date ctn */
+
+.date-ctn{
+    margin-bottom: 24px;
+}
+
+.date-day-name{
+    font-size: 48px;
+    font-weight: 800;
+}
+
+/* inputs inputs inputs inputs inputs inputs inputs inputs inputs inputs inputs */
+/* inputs inputs inputs inputs inputs inputs inputs inputs inputs inputs inputs */
+/* inputs inputs inputs inputs inputs inputs inputs inputs inputs inputs inputs */
+
+.inputs{
+    display: flex;
+}
+
+.input-text-ctn{
+    width: 75%;
+    flex: 1;
+    margin-right: 8px;
+}
+
+.input-text{
+    width: 100%;
+    outline: none;
+    border: transparent;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: var(--allWhite);
+    color: var(--lightBlack);
+}
+
+.input-text:focus{
+    color: var(--darkBlack);
+}
+
+.input-text::placeholder{
+    color: var(--darkWhite);
+}
+
+.buttons-ctn{
+    width: 10%;
+    display: flex;
+}
+
+.add-task{
+    flex: 1;
+    outline: none;
+    border: transparent;
+    padding: 4px 8px;
+    font-weight: 500;
+    font-size: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 4px;
+    background: var(--greenDollar);
+    color: var(--allWhite);
+}
+
+.add-task:hover{
+    background: #0ebf6a;
+}
+
+/* task ctn task ctn task ctn task ctn task ctn task ctn task ctn task ctn */
+/* task ctn task ctn task ctn task ctn task ctn task ctn task ctn task ctn */
+/* task ctn task ctn task ctn task ctn task ctn task ctn task ctn task ctn */
+
+.task-ctn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    background: var(--allWhite);
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-top: 12px;
+}
+
+.task-name-ctn{
+    min-width: 70%;
+    background-color: var(--allWhite);
+}
+
+.task-name{
+    width: 95%;
+    font-size: 14px;
+    color: var(--darkBlack);
+    outline: none;
+    border: transparent;
+    background: transparent;
+    font-weight: 800;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+
+.task-name:focus{
+    color: var(--lightBlack);
+}
+
+.task-name::placeholder{
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.task-buttons{
+    display: flex;
+    background-color: var(--allWhite);
+}
+
+.edit-task{
+    background: var(--lightBlue);
+    color: var(--allWhite);
+    outline: none;
+    border: transparent;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.remove-task{
+    background: var(--wrongRed);
+    color: var(--allWhite);
+    outline: none;
+    border: transparent;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.edit-task:hover{
+    background: #4099ff;
+}
+
+.remove-task:hover{
+    background: #f72c4b;
+}
+
+/* footer footer footer footer footer footer footer footer footer */
+/* footer footer footer footer footer footer footer footer footer */
+/* footer footer footer footer footer footer footer footer footer */
+
+#footer{
+    width: 100%;
+    background-color: var(--darkBlack);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 24px;
+    box-sizing: border-box;
+    z-index: 999999;
+}
+
+#footer h2{
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 8px;
+    color: #ffffff20;
+    box-sizing: border-box;
+}
+
+#footer ul{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+}
+
+#footer ul > li{
+    margin: 0 8px;
+}
+
+#footer ul > li > a{
+    text-decoration: none;
+    color: #ffffff20;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+#footer ul > li > a:hover{
+    color: #ffffff50;
+}
+
+/* media media media media media media media media media media media media */
+/* media media media media media media media media media media media media */
+/* media media media media media media media media media media media media */
+
+
+@media (max-width: 550px){
+    .to-do-ctn{
+        width: 75%;
+        max-height: 75%;
+        padding: 0px;
+    }
+
+    .task{
+        justify-content: space-between;
+    }
+
+    .date-day-name{
+        font-size: 40px;
+    }
+    
+    .task-name-ctn{
+        min-width: 50%;
+    }
+
+    .input-text{
+        width: 100%;
+    }
+
+    .buttons-ctn{
+        width: 12%;
+    }
+
+    #footer{
+        margin: 12px;
+    }
+}
